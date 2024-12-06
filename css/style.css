@@ -1,0 +1,128 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+.card {
+    width: 100%;
+    max-width: 540px;
+    text-align: center;
+    margin: 100px auto 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 30px 70px;
+}
+
+.card .header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 10px;
+}
+
+.card .header h2 {
+    color: #003765;
+}
+
+.card .header img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.card .text-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+
+.card .text-box input {
+    background-color: #edeef0;
+    flex: 1;
+    height: 50px;
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.card .text-box button {
+    position: absolute;
+    right: 5px;
+    background-color: #ff5945;
+    color: #fff;
+    border-radius: 40px;
+    padding: 12px 40px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.card .text-box button:hover {
+    translate: -10px;
+}
+
+.card .list-container ul li {
+    list-style: none;
+    position: relative;
+    font-size: 17px;
+    text-align: left;
+    padding: 12px 8px 12px 40px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.card .list-container ul li::before,
+.card .list-container ul li:first-child::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 6px;
+}
+.card .list-container ul li::before {
+    background-image: url("../img/unchecked.png");
+}
+
+.card .list-container ul .checked {
+    text-decoration: line-through;
+    color: #555;
+}
+.card .list-container ul .checked::before {
+    background-image: url("../img/checked.png");
+}
+
+.error {
+    display: none;
+    font-weight: 500;
+    text-align: right;
+    color: #ff5945;
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    text-align: center;
+    color: #555;
+    border-radius: 50%;
+}
+ul li span:hover {
+    background-color: #edeef0;
+}
